@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!--  <code> element defines a piece of programming code, but the code has to be formatted and is displayed uniformly (same text size etc) -->
+    <code>
+      #include <stdio.h><br>
+      void main() {<br>
+        printf("Programming is Awesome!");<br>
+      }
+    </code>
+
+    <!-- <code> element can be wrapped in <pre> element to use the preformated code-->
+    <pre>
+      <code>
+#include <stdio.h>
+void main() {
+  printf("Programming is Awesome!");
+}
+        </code>
+    </pre>
+    
+    <!-- <samp> element defines sample output from a computer program -->
+    <samp>
+      Exception in thread "main" java.lang.IllegalArgumentException: input == null!<br>
+      at javax.imageio.ImageIO.read(Unknown Source)<br>
+      at svk.sglubos.engine.io.ImagePort.getImageAsResource(ImagePort.java:30)<br>
+      at svk.sglubos.engine.test.Game.<init>(Game.java:32)<br>
+        at svk.sglubos.engine.test.Game.main(Game.java:40)
+      </samp>
+  </body>
+</html>

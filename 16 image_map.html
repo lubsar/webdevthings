@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- An image-map is an image with clickable areas. -->
+
+    <!-- usemap attribute and creates a relationship between the image and the map -->
+    <img src="res/img2.png" alt="image to be mapped" usemap="#map">
+
+    <!-- <map> tag is used to  define an image-map -->
+    <!-- The name attribute of the <map> tag is associated with the <img>'s usemap attribute -->
+    <!-- The <map> tag contains a number of <area> tags, that defines the clickable areas in the image-map: -->
+    <map name="map">
+      <!-- area> tag defines the clickable areas in the image-map: -->
+      <!-- shape attribute defines shape of the clickable area -->
+      <!-- coords attribute defines coords of the shape -->
+      <!-- alt attribute defines alternative of the clickable area -->
+      <!-- href attribute defines link where the clickable area refers to -->
+      <area shape="rect" coords="0,0,149,149" alt="adress" href="10 adress.html">
+      <area shape="rect" coords="0,150,299,149" alt="abbrew" href="08 abbrew.html">
+      <area shape="rect" coords="0,149,149,299" alt="code" href="11 code.html">
+      <!-- coords - center point and radius-->
+      <area shape="circle" coords="225,225,75" alt="images" href="15 images.html">
+    </map>
+  </body>
+</html>

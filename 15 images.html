@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- <img> tag defines image, <img> tag does not have closing tag, it contains only attributes -->
+    <!-- src- attributes which specifies path to desired image -->
+    <img src="res/img1.png">
+
+    <!-- The alt attribute provides an alternate text for an image, if the user for some reason cannot view it
+    (because of slow connection, an error in the src attribute, or if the user uses a screen reader),
+    it is recommended to include this attribute -->
+    <img src="res/not_image.png" alt="displays if image is not avaiable">
+
+    <!-- width and height attributes are used to set size of which will be the image siplayed -->
+    <img src="res/img1.png" alt="displays if image is not avaiable" width="300px" height="300px">
+
+    <!-- lternatively the size can be set using style attribute (recommended way, because external css could change image size) -->
+    <img src="res/img1.png" alt="displays if image is not avaiable" style="width:100px; height:100px;">
+
+    <!-- Animated gis supported ! -->
+    <img src="res/gif1.gif" alt="displays if image is not avaiable" style="width:100px; height:100px;">
+
+    <!-- images can be used as links -->
+    <a href="http://storiesgaming.wordpress.com">
+      <img src="res/gif1.gif" alt="Dawidek" style="width:42px;height:42px;">
+    </a>
+
+    <!-- CSS float property to let the image float to the right or to the left of a text -->
+    <p>
+      <img src="res/gif1.gif" alt="Dawidek floating right" style="float:right;width:42px;height:42px;">
+      The image will float to the right of the text.
+    </p>
+    <p>
+      <img src="res/gif1.gif" alt="Dawidek floating left" style="float:left;width:42px;height:42px;">
+      The image will float to the left of the text.
+    </p>
+
+    
+
+    <!-- border:0 can be used to stop IE and other earlier browser from displaying black border around images -->
+  </body>
+</html>

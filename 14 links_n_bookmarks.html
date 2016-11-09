@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- <a> element describes anchor (link), images can be used as links too-->
+    <!-- refferencing to local file (path relative to this file) -->
+    <a href="head.html"><p>lokal example</p></a>
+
+    <!-- refferencing to external location -->
+    <a href="https:\\google.com\"><p>external example</p></a>
+
+    <!-- target attributes -->
+    <!-- _blank - opens in new frame/tab -->
+    <a href="https:\\google.com\" target="_blank"><p>opens in new frame/tab</p></a>
+
+    <!-- _self - opens in tab/frame it was opened in (default) -->
+    <a href="https:\\google.com\" target="_self"><p>opens in current frame/tab</p></a>
+
+    <!-- _tparent  opens the linked document in the parent frame -->
+    <a href="https:\\google.com\" target="_parent"><p>opens in parent frame</p></a>
+
+    <!-- _top - opens the linked document in the full body of the window -->
+    <a href="https:\\google.com\" target="_top"><p>opens in full body of window</p></a>
+
+    <!-- any text - opens the linked document in a named frame -->
+    <a href="https:\\google.com\" target="franebane"><p>opens in named frame ?</p></a>
+
+    <!-- bookmarks - links to elements of html-->
+    <h1 id="mark">Header</h1>
+
+    <!-- local -->
+   <a href="#mark"><p>local bookmark</p></a>
+
+   <!-- external - path contains #id -->
+   <a href="#mark"><p>external bookmark</p></a>
+  </body>
+</html>
