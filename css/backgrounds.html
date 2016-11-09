@@ -2,22 +2,34 @@
 <html lang="en">
   <head>
   <style>
-    body p {margin:0; -webkit-margin-before: 0; -webkit-margin-after: 0;}
-
+    p {margin:0; margin-bottom: 20px;-webkit-margin-before: 0; -webkit-margin-after: 0;}
     .area {height: 200px;text-align: center;}
 
-    .colorbg {background-color: rgb(200, 130, 130);}
-    /*By default, the image is repeated so it covers the entire element*/
-    .imagebg {background-image: url("../res/img3.png")}
 
+    .colorbg {background-color: rgb(200, 130, 130);}
+
+    /*By default, the image is repeated -> it covers the entire element*/
+    .imagebg {background-image: url("../res/img3.png")}
+    .image-hrepeat {background-repeat: repeat-x;}
+    .image-vrepeat {background-repeat: repeat-y;}
+    .image-norepeat {background-repeat: no-repeat;}
+
+    /* default position is left top*/
+    .image-position-bl {background-position: left bottom;}
+
+    /*background-attachment - specify that the background image should be fixed (will not scroll with the rest of the page) use fixed value */
+    .image-position-fixed {background-position: fixed;}
     </style>
   </head>
 
-  <body>
+  <body style="margin:0;">
     <p class="area colorbg">Colored bg</b>
     <p class="area imagebg">Image bg</b>
-    <p class="area colorbg">Colored bg</b>
-    <p class="area colorbg">Colored bg</b>
+    <p class="area imagebg image-hrepeat">Image (horizontally repeated)bg</b>
+    <p class="area imagebg image-vrepeat">Image (vertically repeated)bg</b>
+    <p class="area imagebg image-norepeat">Image (not repeated) bg</b>
+    <p class="area imagebg image-norepeat image-position-bl">Image bg with LB position</b>
+    <p class="area imagebg image-norepeat image-position-fixed">Image bg with fixed position (if scrolled it stays where it was)</p>
   </body>
 
 </html>
