@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table {
+        margin-bottom: 30px;
+      }
+
+      .border, .border td, .border caption, .border th {
+        border: 1px solid black;
+      }
+
+      .collapse, .collapse th, .collapse td, .collapse caption {
+        /*borders collapse -> double borders become single border*/
+        border-collapse: collapse;
+      }
+
+      .cell-padding th, .cell-padding td {
+        /*specifies the space between the cell content and its borders*/
+        padding-right: 15px;
+        padding-left:  15px;
+      }
+
+      .spacing {
+        /* specifies the space between borders of cells in table, works for non collapsed borders only*/
+        border-spacing: 10px;
+      }
+
+      /* specifies style for the even nth <td> child */
+      .nthelements td:nth-child(even) {
+        color: red;
+      }
+
+        /* specifies style for the odd <tr> child */
+      .nthelements tr:nth-child(odd) {
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <table class="border">
+      <caption>Simple borders</caption>
+      <tr>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+    </table>
+
+    <table class="border collapse">
+      <caption>Collapsed borders</caption>
+      <tr>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+    </table>
+
+    <table class="border collapse cell-padding">
+      <caption>Added cell padding</caption>
+      <tr>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+    </table>
+
+    <table class="border spacing">
+      <caption>Spacing between cells</caption>
+      <tr>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+    </table>
+
+    <table class="border spacing nthelements">
+      <caption>Styles of nth elements</caption>
+      <tr>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+        <th>Sample header</th>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+      <tr>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+        <td>Sample Data</td>
+      </tr>
+    </table>
+  </body>
+</html>
