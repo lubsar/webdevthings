@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* border-style sets style of border*/
+      #dotted {border-style: dotted;}
+      #dashed {border-style: dashed;}
+      #solid {border-style: solid;}
+      #double {border-style: double;}
+      #groove {border-style: groove;}
+      #ridge {border-style: ridge;}
+      #inset {border-style: inset;}
+      #outset {border-style: outset;}
+      #none {border-style: none;}
+      #hidden {border-style: hidden;}
+      #mix {border-style: dotted dashed solid double;}
+
+      .solid-border {border-style: solid;}
+
+      /*STYLE OF THE BORDER HAS TO BES SET BEFORE SPECIFIC PROPERTIES CAN HAVE EFFECT !*/
+
+      /*border-width sets the width of border*/
+      .width5-border {border-width: 5px;}
+
+      /*border-color sets the color of border*/
+      /*if border-color is not set, it inherits the color of the element (ex. paragraph text color...)*/
+      .red-border {border-color: red;}
+
+      /*border-radius sets the radius of rounded corners*/
+      .rounded-border {border-radius: 10px;}
+
+      /*to shorten the code, it is possible to specify all the individual border properties in one property */
+      /*you can specify style, width and color*/
+      #inline-def-border {
+        border: 5px solid red;
+      }
+
+      /* border properties can be specified for all 4 sides of an element exp: colors*/
+      #colors2 {
+        /*top and bottom 1st value, left and right is 2nd value*/
+        border-color: red blue;
+      }
+      #colors3 {
+        /*top and is 1st value, left and right is 2nd value, bottom is 3rd color*/
+        border-color: red blue green;
+      }
+      #colors4 {
+        /*top and is 1st value, right is 2nd value, bottom is 3rd value, left is 4th value*/
+        border-color: red blue green orange;
+      }
+
+      /*and also you can define different border for each side */
+      #different-borders {
+        /*defines top border*/
+        border-top: 1px solid blue;
+        /*defines right border*/
+        border-right: 2px dashed red;
+        /*defines bottom border*/
+        border-bottom: 3px outset green;
+        /*defines left border*/
+        border-left: 4px dotted orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="dotted">A dotted border</p>
+    <p id="dashed">A dashed border</p>
+    <p id="solid">A solid border</p>
+    <p id="double">A double border</p>
+    <p id="groove">A groove border</p>
+    <p id="ridge">A ridge border</p>
+    <p id="inset">An inset border</p>
+    <p id="outset">An outset border</p>
+    <p id="none">No border</p>
+    <p id="hidden">A hidden border</p>
+    <p id="mix">A mixed border</p>
+
+    <p class="solid-border width5-border">A wide border</p>
+    <p class="solid-border red-border">A colored border</p>
+    <p class="solid-border rounded-border">A rounded border</p>
+
+    <p id="inline-def-border">Short defining of border style</p>
+
+    <p id="colors2" class="solid-border">A border with 2 different colors</p>
+    <p id="colors3" class="solid-border">A border with 3 different colors</p>
+    <p id="colors4" class="solid-border">A border with 4 different colors</p>
+
+    <p id="different-borders">Different borders on each side</p>
+  </body>
+</html>
