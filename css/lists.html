@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #no-style-type {
+        /*list-style-type sets element in fron ot items of an list (can override type attribute of an ordered list...)*/
+        list-style-type:none;
+      }
+
+      #horizontal-list {
+        list-style-type: none;
+        /*with floating of list items to one side makes list displayed horizontaly*/
+        display: inline;
+      }
+
+      #horizontal-list a {
+        text-decoration: none;
+      }
+
+      #horizontal-list li {
+        padding-left: 16px;
+        display: block;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>No element in front of items</h4>
+    <ul id="no-style-type">
+      <li>Sample</li>
+      <li>Sample</li>
+      <li>Sample</li>
+      <li>Sample</li>
+      <li>Sample</li>
+    </ul>
+
+    <h4>Horizontal list</h4>
+    <ul id="horizontal-list">
+      <li><a href="#no-style-type">Sample link</a></li>
+      <li><a href="#no-style-type">Sample link</a></li>
+      <li><a href="#no-style-type">Sample link</a></li>
+      <li><a href="#no-style-type">Sample link</a></li>
+      <li><a href="#no-style-type">Sample link</a></li>
+    </ul>
+  </body>
+</html>
