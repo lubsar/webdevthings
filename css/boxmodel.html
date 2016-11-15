@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        font-family: sans-serif;
+        text-align: center;
+        background-color: #59C2FF;
+        margin: auto;
+      }
+
+      img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+      }
+
+      ul {
+        display: block;
+        max-width: 50%;
+        min-width: 300px;
+        width: 600px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body style="margin: 0">
+    <h1>CSS box model</h1><br>
+    <img src="../res/box_model.png" alt="CSS box model scheme">
+    <ul>
+      <li>Outline is <b>part of margin</b> (does not add size)</li>
+      <li><b>Total width</b> of element = width + left padding + right padding + left border + right border + left margin + right margin</li>
+      <li><b>Total heigh</b> of element = height + top padding + bottom padding + top border + bottom border + top margin + left margin</li>
+      <li>To horizontally <b>center</b> element set <b>margin</b> property to <b>auto</b> (specified width required)</li>
+      <li><b>Top and bottom margins</b> of elements are sometimes <b>collapsed</b> into a single margin that is equal to the largest of the two margins (only top and bottom margins can collapse)</li>
+      <li><b>Width and height</b> properties specify width and heaight of <b>content</b> (not total width/height)</li>
+      <li>The <b>width and height</b> can be set to <b>auto (default)</b> - browser calculates the width and height</li>
+      <li>The <b>max-width</b> property is used to set the <b>maximum width</b> of an element</li>
+      <li>The <b>min-width</b> property is used to set the <b>minimum width</b> of an element</li>
+      <li>The <b>max-height</b> property is used to set the <b>maximum height</b> of an element</li>
+      <li>The <b>min-height</b> property is used to set the <b>minimum height</b> of an element</li>
+    </ul>
+  </body>
+</html>
