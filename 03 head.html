@@ -2,9 +2,39 @@
 <html lang="en">
   <head>
     <!-- <title> tag sets title displayed in the name of the browser tab etc.. -->
-    <title>Head</hitle>
+    <title>Head</title>
 
-    <!-- <meta> tag sets metadata charset of the document -->
+    <!-- <meta> tag sets metadata of the document (used by browsers (how to display content), by search engines (keywords), and other web services) -->
+    <!-- charset attribute sets the document charset -->
     <meta charset="utf-8">
+
+    <!-- name and content attributes are used to set various metadata-->
+    <!-- description property sets the description of the html document -->
+    <meta meta name="description" content="website">
+
+    <!-- keywords propery is used to set keywords used by search engines -->
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+
+    <!-- author sets the author of the webpage -->
+    <meta name="author" content="Ľubomir Hlavko">
+
+    <!-- http-equiv attribute sets the atuomatic refresh rate (in seconds) -->
+    <meta http-equiv="refresh" content="30">
+
+    <!-- <style> tag is used to set css style for this html page -->
+    <style>
+      body {
+        background-color: magenta;
+      }
+    </style>
+
+    <!-- <script> tag defines client side javascript script -->
+    <script>
+      alert('script ran');
+    </script>
+
+    <!-- base tag defines a link which relative links relate to (if relative link is images/sth.png and base reference is old/, so the relative link will point to old/images/sth.png)-->
+    <!-- href attribute sets the base reference, target attribute can be used too -->
+    <base href="" target="_blank">
   </head>
 </html>
