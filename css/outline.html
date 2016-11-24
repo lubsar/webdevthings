@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /*outline does not add to element dimensions, some setting might not have effect because of the lack of space around the element*/
+      /*outline-style sets style of outline*/
+      #dotted {outline-style: dotted;}
+      #dashed {outline-style: dashed;}
+      #solid {outline-style: solid;}
+      #double {outline-style: double;}
+      #groove {outline-style: groove;}
+      #ridge {outline-style: ridge;}
+      #inset {outline-style: inset;}
+      #outset {outline-style: outset;}
+      #none {outline-style: none;}
+      #hidden {outline-style: hidden;}
+      #mix {outline-style: dotted dashed solid double;}
+
+      .solid-outline {outline-style: solid;}
+
+      /*STYLE OF THE OUTLINE HAS TO BES SET BEFORE SPECIFIC PROPERTIES CAN HAVE EFFECT !*/
+
+      /*outline-width sets the width of outline*/
+      .width5-outline {outline-width: 5px;}
+
+      /*outline-color sets the color of outline*/
+      /*if outline-color is not set, it inherits the color of the element (ex. paragraph text color...)*/
+      .red-outline {outline-color: red;}
+
+      /*inverted color ensures that the outline is visible regardless of background (default)*/
+      .iverted-outline {outline-color: invert;}
+
+      /*outline-offset sets the space between border and outline*/
+      .offset-outline {outline-offset: 20px;}
+
+      /*to shorten the code, it is possible to specify all the individual outline properties in one property */
+      /*you can specify style, width and color*/
+      #inline-def-outline {
+        outline: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="dotted">A dotted outline</p>
+    <p id="dashed">A dashed outline</p>
+    <p id="solid">A solid outline</p>
+    <p id="double">A double outline</p>
+    <p id="groove">A groove outline</p>
+    <p id="ridge">A ridge outline</p>
+    <p id="inset">An inset outline</p>
+    <p id="outset">An outset outline</p>
+    <p id="none">No outline</p>
+    <p id="hidden">A hidden outline</p>
+    <p id="mix">A mixed outline</p>
+
+    <p class="solid-outline width5-outline">A wide outline</p>
+    <p class="solid-outline red-outline">A colored outline</p>
+    <p class="solid-outline inverted-outline">An inverted colored outline</p>
+    <p class="solid-outline red-outline offset-outline" style="border: 2px solid blue;">Outline with spacing between it and border</p>
+    <p id="inline-def-outline">Short defining of outline style</p>
+  </body>
+</html>
