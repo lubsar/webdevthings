@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .color {
+        /*color attribute sets the color of text*/
+        color: red;
+      }
+
+      /*ALIGNMENT*/
+      .center {
+        /*sets the alignment of a text, possible values: center, left, right, justify... */
+        text-align: center;
+      }
+
+      .justify {
+        /*every line is stretched to make them equal width, left and right margins are straight*/
+        text-align: justify;
+      }
+
+      /*DECORATION*/
+      .underlined {
+        /*text-decoration property sets decoration to a text, possible values: none (removes decoration/specifies no decoration), underlined, overline, line-trough*/
+        text-decoration: underline;
+
+        /*different text decoration properties (color etc) can be specified*/
+        /*text-decoration-color attribute defines colour of the decoration, but it is tricky to make it work (wrapping is needed)*/
+        text-decoration-color: orange;
+      }
+
+      .overlined {
+        /*adds underline decoration to a text*/
+        text-decoration: overline;
+      }
+
+      .line-through {
+        /*adds overline decoration to a text*/
+        text-decoration: line-through;
+      }
+
+      /*TRANSFORMATION*/
+      .lower-case {
+        /*text-transform property specify uppercase or lowercase letter in a text, values> lowercase, uppercase, capitalize*/
+        /*transforms all the letters lowercase*/
+        text-transform: lowercase;
+      }
+
+      .upper-case {
+        /*transforms all the letters uppercase*/
+        text-transform: uppercase;
+      }
+
+      .capitalize {
+        /*transforms all the first letters of a words in text to uppercase*/
+        text-transform: capitalize;
+      }
+
+      /*INDENTATION*/
+      .indent {
+        /*text-indent property sets the indentation of the first line of a text*/
+        text-indent: 20px;
+      }
+
+      /*LETTER SPACING*/
+      .space-letters {
+        /*letter-spacing property sets the spacing of characters  in a text (negative values are posible)*/
+        letter-spacing: 3px;
+      }
+
+      /*LINE HEIGHT*/
+      .line-height {
+        /*line-height property sets the height of lines(can be used to set space between lines)*/
+        line-height: 30px;
+      }
+
+      /*DIRECTION*/
+      .rtl {
+        /*direction sets the text direction, values: ltr (left to right, default), rtl (right to left), initial(which was initial))*/
+        direction: rtl;
+      }
+
+      /*WORD SPACING*/
+      .space-words {
+        /*word-spacing sets the space between words of text*/
+        word-spacing: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p class="color">Colored text</p>
+    <p class="center">Centered text</p>
+    <p class="justify">
+      Justify text alignment<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p class="underlined">underlined text</p>
+    <p class="overlined">Overlined text</p>
+    <p class="line-through">Striked trough text</p>
+    <p class="upper-case">Uppercase text</p>
+    <p class="lower-case">LOWRCASE TEXT</p>
+    <p class="capitalize">capitalized text</p>
+    <p class="indent">
+      Indentation<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </body>
+  <p class="space-letters">Space between characters</p>
+  <p class="line-height">
+    Height of lines<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p class="rtl">Right to left text direction</p>
+  <p class="word-spacing">Space between words</p>
+</body>
+</html>
